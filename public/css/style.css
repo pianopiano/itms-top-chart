@@ -1,0 +1,445 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    background-color: #f9f8f9;
+    height: 1000px;
+}
+
+/* header
+ ---------------------------------------------------- */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: url(../img/headerBg.png) repeat-x;
+    border-bottom: 1px #7b7b7b solid;
+    z-index: 1;
+    min-width: 320px;
+}
+
+/* red yellow green btn
+ ---------------------------------------------------- */
+#dummyBtns div {
+    margin: 5px 0 0 7px;
+    float: left;
+    width: 14px;
+    height: 14px;
+}
+
+#red {
+    background: url(../img/red.png) no-repeat;
+}
+
+#yellow {
+    background: url(../img/yellow.png) no-repeat;
+}
+
+#green {
+    background: url(../img/green.png) no-repeat;
+}
+
+/* search bar
+ ---------------------------------------------------- */
+#search-bar {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    width: 171px;
+    height: 26px;
+    background: url(../img/search-bar.png) no-repeat;
+    display: none;
+}
+
+#select-box {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 120px;
+    background-color: #ffffff;
+    font-size: 11px;
+    color: #999;
+    z-index: 10;
+    border: 1px solid #aaaaaa;
+    opacity: 0.95;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+#select-box ul {
+    margin: 0;
+    padding: 5px;
+}
+
+#select-box li {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+    display: block;
+    cursor: default;
+}
+
+#genre {
+    font-size: 12px;
+    border-bottom: 1px solid #dddddd;
+    color: #666666;
+}
+
+
+/* controller
+ ---------------------------------------------------- */
+#playpause {
+    position: absolute;
+    top: 21px;
+    left: 105px;
+    background: url(../img/playBtn.png) no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+#prev {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    background: url(../img/prevBtn.png) no-repeat;
+    width: 25px;
+    height: 16px;
+}
+
+#next {
+    position: absolute;
+    top: 25px;
+    left: 145px;
+    background: url(../img/nextBtn.png) no-repeat;
+    width: 25px;
+    height: 16px;
+}
+
+#seekUI {
+    margin: 0 auto;
+    text-align: center;
+    width: 420px;
+    padding: 0 ;
+    font-size: 10px;
+}
+
+#seekUI div {
+	float: left;
+}
+
+#repeat {
+    width: 19px;
+    height: 17px;
+    background: url(../img/btn-repeat_off.png) no-repeat 0 0;
+    margin: 0 1px 0 0;
+}
+
+#random {
+    width: 19px;
+    height: 17px;
+    background: url(../img/btn-random_off.png) no-repeat 0 0;
+    margin: 0 0 0 1px;
+}
+
+#currentTime {
+	margin: 2px 0 0 0;
+}
+
+#totalTime {
+	margin: 2px 0 0 0;
+}
+
+#liquidList {
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 19px;
+    height: 15px;
+    background: url(../img/liquidList.png) no-repeat;
+}
+
+#liquidCrystal {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 580px;
+    height: 52px;
+    padding: 0;
+    margin: 0 auto;
+    background: url(../img/liquidBg.png) repeat-x;
+    border: 1px #7b7b7b solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: none;
+}
+
+#select {
+    position: fixed;
+    top: 61px;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    background: url(../img/selectBg.png) repeat-x;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#thumbnail {
+    margin: 5px 8px;
+    float: left;
+    display: none;
+}
+
+#textArea {
+    width: 480px;
+    height: 50px;
+    margin: 3px auto 0 auto;
+    padding: 0;
+    text-align: center;
+    float: left;
+    display: none;
+}
+
+/* dummys
+ ---------------------------------------------------- */
+#apple {
+    background: url(../img/apple.png) no-repeat;
+    width: 25px;
+    height: 30px;
+    margin: 11px auto 0 auto;
+}
+
+#music {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 134px;
+    height: 23px;
+    background: url(../img/navi-music.png) no-repeat;
+    display: table;
+}
+
+#dummyNavi {
+    text-align: center;
+    margin: 1px auto;
+    width: 418px;
+    height: 22px;
+    background: url(../img/navi-dummy-navi.png) no-repeat;
+}
+
+#iTnes-store {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 99px;
+    height: 23px;
+    background: url(../img/navi-iTunes-store.png) no-repeat;
+}
+
+
+/* panel
+ ---------------------------------------------------- */
+#container {
+    margin: 50px auto 0 auto;
+    padding: 50px 0;
+    width: 100%;
+    overflow : hidden;
+}
+
+.panel {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 8px;
+    float: left;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid #888888;
+    overflow: hidden;
+    -moz-box-shadow: 1px 2px 8px #989898;
+    -webkit-box-shadow: 1px 2px 8px #989898;
+}
+
+.panel img {
+    width: 120px;
+    height: 120px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.panel p {
+    margin: 0 0 5px 5px;
+    padding: 0;
+    width: 110px;
+    color: #eeeeee;
+}
+
+.panelTitle {
+    font-weight: bold;
+}
+
+.panel div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    padding: 45px 0 0 0;
+    background-color: #222222;
+    opacity: 0.85;
+    display: none;
+}
+
+
+#title {
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    font-size: 13px;
+    width: 100%;
+    height: 15px;
+}
+
+#name {
+    margin: 1px 0 0 0;
+    padding: 0;
+    font-size: 11px;
+    color: #5e5050;
+    width: 100%;
+    height: 13px;
+}
+
+
+/* audio
+ ---------------------------------------------------- */
+#player {
+    display: none;
+}
+
+/* vol
+ ---------------------------------------------------- */
+#volume {
+    position: absolute;
+    top: 22px;
+    left: 190px;
+    display: none;
+}
+
+#volume .slider {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100px;
+}
+#volume .slider.slider-horizontal .slider-handle {
+    margin-left: -8px;
+    margin-top: -4px;
+}
+#volume .slider.slider-vertical .slider-handle {
+    margin-left: -4px;
+    margin-top: -13px;
+}
+#volume .slider input {
+    display: none;
+}
+#volume .slider-handle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(../img/vol-handle.png) no-repeat;
+    opacity: 1;
+    border: 0 solid transparent;
+    cursor: default;
+}
+#volume .slider.slider-horizontal .slider-selection {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background: url(../img/vol-prog.png) no-repeat;
+}
+#volume .slider-track {
+    height: 8px;
+    width: 100%;
+    margin-top: -5px;
+    top: 50%;
+    left: 0;
+    background: url(../img/vol-bg.png) no-repeat 0 0;
+}
+
+/* seek
+ ---------------------------------------------------- */
+#seekBer {
+    height: 7px;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 10px 5px 0 10px;
+}
+
+#seekBer .slider {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 300px;
+}
+#seekBer .slider.slider-horizontal .slider-handle {
+    margin-left: -8px;
+    margin-top: -2px;
+}
+#seekBer .slider.slider-vertical .slider-handle {
+    margin-left: -2px;
+    margin-top: -10px;
+}
+#seekBer .slider input {
+    display: none;
+}
+#seekBer .slider-handle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url(../img/handle.png) no-repeat;
+    opacity: 1;
+    border: 0 solid transparent;
+    cursor: default;
+}
+#seekBer .slider.slider-horizontal .slider-selection {
+    height: 7px;
+    top: 0;
+    left: -2px !important;
+    background: url(../img/seek-prog.png) repeat-x -3px;
+}
+#seekBer .slider-track {
+    height: 7px;
+    top: 0;
+    left: 0;
+    background: url(../img/seekBarBg.png) repeat-x;
+}
+
+.scale {
+    -webkit-animation: panelAnime 0.5s ease-out infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes panelAnime {
+    0% { -webkit-transform: scale(1, 1); }
+    30% { -webkit-transform: scale(1.1, 1.1); }
+    100% { -webkit-transform: scale(1, 1); }
+}
